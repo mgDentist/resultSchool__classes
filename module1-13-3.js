@@ -5,7 +5,7 @@ class Dictionary {
     }
 
     add(word, description) {
-        this.words[word] = description.toString();
+        this.words[word] = {word, description};
         console.log('add',this.words);
         return this.words;
     }
