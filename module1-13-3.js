@@ -21,7 +21,7 @@ class Dictionary {
 
     get(key) {
         if (key in this.words) {
-            console.log('get(true):', `${key}: ${this.words[key]}`);
+            console.log('get(true):', `${key}:`, this.words[key]);
         } else {
             console.log('get(false):', `${key} не найден в объекте ${this.name}`);
         }
@@ -29,7 +29,7 @@ class Dictionary {
 
     showAllWords() {
         for (const key in this.words) {
-            console.log('showAll:', `${key} - ${this.words[key]}`);
+            console.log('showAll:', `${key} -`, this.words[key]);
         }
     }
 }
